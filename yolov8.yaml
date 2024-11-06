@@ -1,0 +1,17 @@
+train: C:/Users/user/OTUS/proekt_work/ver_01/dataset/images/train  
+val: C:/Users/user/OTUS/proekt_work/ver_01/dataset/images/val      
+
+nc: 2  
+names: ['up_step', 'step']  
+
+lr0: 0.01                          # Начальная скорость обучения
+lrf: 0.1                           # Фактическая скорость обучения на последней эпохе
+momentum: 0.937                    # Моментум
+weight_decay: 0.0005               # Параметр регуляризации
+fl_gamma: 0.0                      # Фактор фокуса для Focal Loss
+hflip: 0.5                         # Вероятность горизонтального отражения
+vflip: 0.5                         # Вероятность вертикального отражения
+rotate: 10                         # Угол поворота
+translate: 0.1                      # Сдвиг изображения
+scale: [0.5, 1.5]                  # Диапазон масштабирования
+color_jitter: [0.2, 0.2, 0.2, 0.1]  # Аугментации цвета
